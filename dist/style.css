@@ -73,24 +73,17 @@ body {
   margin-top: 1rem;
   padding: 1rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-size: 1.25;
+  font-weight: 600;
+  text-align: center;
   cursor: pointer;
   transition: all 0.3s;
 }
-.card__btn i {
-  margin-right: 0.25rem;
+.card__btn img {
+  margin-right: 0.5rem;
 }
 .card__btn:hover {
   background-color: #1a4031;
-}
-
-.attribution {
-  display: none;
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
 
 /*# sourceMappingURL=style.css.map */

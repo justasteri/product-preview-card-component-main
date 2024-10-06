@@ -93,26 +93,18 @@ body {
     margin-top: 1rem;
     padding: 1rem;
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    font-size: 1.25;
+    font-weight: 600;
+    text-align: center;
     cursor: pointer;
     transition: all 0.3s;
 
-    i {
-      margin-right: 0.25rem;
+    img {
+      margin-right: 0.5rem;
     }
   }
 
   &__btn:hover {
     background-color: $btn-color-hover;
-  }
-}
-
-.attribution {
-  display: none;
-  font-size: 11px;
-  text-align: center;
-
-  a {
-    color: hsl(228, 45%, 44%);
   }
 }
