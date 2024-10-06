@@ -16,7 +16,6 @@ body {
   font-weight: 500, 700;
   background-color: $primary-color-cream;
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -25,8 +24,8 @@ body {
 .card {
   display: flex;
   background-color: white;
-  max-width: 42%;
-  max-height: auto;
+  width: 42%;
+  height: auto;
   border-radius: 8px;
   overflow: hidden;
 
