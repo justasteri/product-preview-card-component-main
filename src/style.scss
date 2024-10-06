@@ -6,12 +6,13 @@ $primary-color-cream: hsl(30, 38%, 92%);
 
 $secondary-color-dark-blue: hsl(212, 21%, 14%);
 $secondary-color-dark-grayish-blue: hsl(228, 12%, 48%);
+$secondary-color-green: #3d8268;
 
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-weight: 500;
-  background-color: hsl(30, 38%, 92%);
+  font-weight: 500, 700;
+  background-color: $primary-color-cream;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -53,11 +54,48 @@ body {
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.5em;
-    color: hsl(228, 12%, 48%);
+    color: $secondary-color-dark-grayish-blue;
   }
 
   &__title {
     line-height: 1;
+  }
+
+  &__description {
+    &__text {
+      color: $secondary-color-dark-grayish-blue;
+      line-height: 1.5;
+    }
+
+    &__price {
+      margin-top: 1.5rem;
+      .price--big {
+        font-family: "Fraunces", sans-serif;
+        font-weight: 700;
+        color: $secondary-color-green;
+        font-size: 2rem;
+      }
+      .price--old {
+        margin-left: 1rem;
+        color: $secondary-color-dark-grayish-blue;
+      }
+    }
+  }
+
+  &__btn {
+    background-color: $secondary-color-green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    min-width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+
+    i {
+      margin-right: 0.25rem;
+    }
   }
 }
 

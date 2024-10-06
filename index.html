@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -30,13 +36,19 @@
         </header>
         <main>
           <section class="card__description">
-            <p>
+            <p class="card__description__text">
               A floral, solar and voluptuous interpretation composed by Olivier
               Polge, Perfumer-Creator for the House of CHANEL.
             </p>
-            <p class="card__description__price">$149.99 $169.99</p>
+            <p class="card__description__price">
+              <span class="price--big">$149.99</span>
+              <del class="price--old"> $169.99 </del>
+            </p>
           </section>
-          <button class="card__btn">Add to Cart</button>
+          <button class="card__btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+          </button>
         </main>
       </div>
     </div>
