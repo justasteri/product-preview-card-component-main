@@ -16,16 +16,17 @@ body {
   font-weight: 500, 700;
   background-color: $primary-color-cream;
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 
 .card {
   display: flex;
   background-color: white;
-  width: 42%;
-  height: auto;
+  max-width: 600px;
+  max-height: 450px;
   border-radius: 8px;
   overflow: hidden;
 
@@ -105,5 +106,9 @@ body {
 
   &__btn:hover {
     background-color: $btn-color-hover;
+  }
+
+  @media screen and (max-width: 42.857rem) {
+    flex-direction: column;
   }
 }
