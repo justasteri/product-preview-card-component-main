@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -17,12 +15,13 @@
   </head>
   <body>
     <div class="card">
-      <img
-        class="card__img"
-        src="images/image-product-desktop.jpg"
-        alt="A picture of Gabrielle Essence Eau de Parfum bottle by CHANEL."
-      />
-      <div class="card__content">
+      <div class="card__img">
+        <img
+          src="images/image-product-desktop.jpg"
+          alt="A picture of Gabrielle Essence Eau de Parfum bottle by CHANEL."
+        />
+      </div>
+      <div class="card__details">
         <header>
           <span class="card__category">Perfume</span>
           <h1 class="card__title">Gabrielle Essence Eau de Parfum</h1>
@@ -33,10 +32,10 @@
               A floral, solar and voluptuous interpretation composed by Olivier
               Polge, Perfumer-Creator for the House of CHANEL.
             </p>
-            <p class="card__description__price">
-              <span class="price--big">$149.99</span>
+            <div class="card__description__price">
+              <span class="price">$149.99</span>
               <del class="price--old"> $169.99 </del>
-            </p>
+            </div>
           </section>
           <button class="card__btn">
             <img src="images/icon-cart.svg" alt="Add product to cart." />

@@ -10,112 +10,120 @@ $secondary-color-dark-grayish-blue: hsl(228, 12%, 48%);
 $btn-color: #3d8268;
 $btn-color-hover: #1a4031;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
   font-weight: 500, 700;
+
   background-color: $primary-color-cream;
+
   display: flex;
-  height: 100vh;
-  align-items: center;
   justify-content: center;
-  margin: 0;
+  align-items: center;
+
+  min-height: 100vh;
 }
 
 .card {
   display: flex;
   background-color: white;
-  width: 40%;
-  height: 60%;
-  border-radius: 8px;
-  overflow: hidden;
+  border-radius: 10px;
+  // box-shadow: 0 4px 6px rgba(0, 0, 0.1);
+  max-width: 600px;
+  // overflow: hidden;
 
-  h1 {
+  &__img {
+    flex: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__details {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  &__category {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: $secondary-color-dark-grayish-blue;
+  }
+
+  &__title {
     font-family: "Fraunces", sans-serif;
     font-weight: bold;
     font-size: 2rem;
     text-transform: capitalize;
+    line-height: 1;
   }
 
-  &__img {
-    flex: 1;
+  &__description {
+    &__text {
+      color: $secondary-color-dark-grayish-blue;
+      line-height: 1.5;
+    }
+
+    &__price {
+      margin-top: 1.5rem;
+      .price {
+        font-family: "Fraunces", sans-serif;
+        font-weight: 700;
+        color: $btn-color;
+        font-size: 2rem;
+      }
+      .price--old {
+        margin-left: 1rem;
+        color: $secondary-color-dark-grayish-blue;
+      }
+    }
   }
 
-  &__content {
-    flex: 1;
-    //   box-sizing: border-box;
-    //   padding: 2rem;
+  &__btn {
+    background-color: $btn-color;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    min-width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    img {
+      margin-right: 0.5rem;
+    }
   }
 
-  // &__category {
-  //   font-size: 0.7rem;
-  //   text-transform: uppercase;
-  //   letter-spacing: 0.5em;
-  //   color: $secondary-color-dark-grayish-blue;
-  // }
-
-  // &__title {
-  //   line-height: 1;
-  // }
-
-  // &__description {
-  //   &__text {
-  //     color: $secondary-color-dark-grayish-blue;
-  //     line-height: 1.5;
-  //   }
-
-  //   &__price {
-  //     margin-top: 1.5rem;
-  //     .price--big {
-  //       font-family: "Fraunces", sans-serif;
-  //       font-weight: 700;
-  //       color: $btn-color;
-  //       font-size: 2rem;
-  //     }
-  //     .price--old {
-  //       margin-left: 1rem;
-  //       color: $secondary-color-dark-grayish-blue;
-  //     }
-  //   }
-  // }
-
-  // &__btn {
-  //   background-color: $btn-color;
-  //   color: white;
-  //   border: none;
-  //   border-radius: 8px;
-  //   min-width: 100%;
-  //   margin-top: 1rem;
-  //   padding: 1rem;
-  //   font-family: "Montserrat", sans-serif;
-  //   font-size: 1.25;
-  //   font-weight: 600;
-  //   text-align: center;
-  //   cursor: pointer;
-  //   transition: all 0.3s;
-
-  //   img {
-  //     margin-right: 0.5rem;
-  //   }
-  // }
-
-  // &__btn:hover {
-  //   background-color: $btn-color-hover;
-  // }
+  &__btn:hover {
+    background-color: $btn-color-hover;
+  }
 }
 
-// @media screen and (max-width: 37.5rem) {
-//   .card {
-//     flex-direction: column;
-//     max-height: 90%;
-//     max-width: 90%;
+@media screen and (max-width: 48rem) {
+  .card {
+    flex-direction: column;
+    max-width: 100%;
+    // max-height: 90%;
 
-//     &__img {
-//       object-fit: cover;
-//       // object-position: 50% 35%;
-//     }
-
-//     &__content {
-//     }
-//   }
-// }
+    //   &__img {
+    //     overflow: hidden;
+    //     object-fit: cover;
+    //     object-position: 50% 35%;
+    //   }
+  }
+}
