@@ -91,10 +91,14 @@ body {
   background-color: #1a4031;
 }
 
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 42.857rem) {
   .card {
     flex-direction: column;
-    max-width: 100%;
+    max-width: 90%;
+    height: 90%;
+  }
+  .card__img img {
+    height: 200px;
   }
 }
 

@@ -16,10 +16,13 @@
   <body>
     <div class="card">
       <div class="card__img">
-        <img
-          src="images/image-product-desktop.jpg"
-          alt="A picture of Gabrielle Essence Eau de Parfum bottle by CHANEL."
-        />
+        <picture>
+          <source
+            media="(max-width: 685px)"
+            srcset="./images/image-product-mobile.jpg"
+          />
+          <img src="./images/image-product-desktop.jpg" alt="Product Image" />
+        </picture>
       </div>
       <div class="card__details">
         <header>

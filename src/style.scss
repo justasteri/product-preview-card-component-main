@@ -115,16 +115,16 @@ body {
   }
 }
 
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 42.857rem) {
   .card {
     flex-direction: column;
-    max-width: 100%;
-    // max-height: 90%;
+    max-width: 90%;
+    height: 90%;
 
-    //   &__img {
-    //     overflow: hidden;
-    //     object-fit: cover;
-    //     object-position: 50% 35%;
-    //   }
+    &__img {
+      img {
+        height: 200px;
+      }
+    }
   }
 }
