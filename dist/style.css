@@ -50,7 +50,7 @@ body {
   line-height: 1;
   margin-bottom: 2rem;
 }
-.card__description__text {
+.card__description p {
   color: hsl(228, 12%, 48%);
   line-height: 1.5;
 }

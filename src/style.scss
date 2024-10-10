@@ -67,7 +67,7 @@ body {
   }
 
   &__description {
-    &__text {
+    p {
       color: $secondary-color-dark-grayish-blue;
       line-height: 1.5;
     }
